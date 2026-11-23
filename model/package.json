@@ -1,0 +1,27 @@
+{
+  "name": "delcom-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "db:sync": "node models/src/sync.js",
+    "db:backup": "node models/src/backup.js",
+    "db:migrate": "node models/src/migrate.js",
+    "db:pgbackup": "node models/src/pgbackup.js backup",
+    "db:pgrestore": "node models/src/pgbackup.js restore",
+    "db:seed": "node models/src/seed.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "dayjs": "^1.11.19",
+    "dotenv": "^17.2.3",
+    "mysql2": "^3.16.0",
+    "pg": "^8.16.3",
+    "sequelize": "^6.37.7"
+  }
+}

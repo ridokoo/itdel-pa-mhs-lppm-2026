@@ -1,0 +1,111 @@
+/* =========================================================
+   1. FORCE TEXT VISIBILITY (PEMAKSA TULISAN TERLIHAT)
+   ========================================================= */
+
+/* Memaksa semua elemen di dalam konten agar berwarna gelap */
+.content-inner,
+.content,
+.card,
+.card-body,
+.page-header,
+table,
+.page-title {
+    color: #212529 !important; /* Hitam Pekat */
+}
+
+/* Memaksa tulisan di dalam tabel */
+table td,
+table th,
+table span,
+table small,
+.fw-bold,
+.fw-semibold {
+    color: #212529 !important;
+}
+
+/* Memaksa judul halaman terlihat */
+.page-title, .page-header-content h4 {
+    color: #212529 !important;
+    opacity: 1 !important;
+}
+
+/* Memperbaiki teks abu-abu yang terlalu tipis */
+.text-muted {
+    color: #666666 !important;
+}
+
+/* =========================================================
+   2. NAVBAR & SIDEBAR (HIJAU #20C997)
+   ========================================================= */
+
+/* Navbar Atas */
+.navbar.navbar-static {
+    background-color: #0070C0 !important;
+    border: none !important;
+}
+
+/* Teks & Icon Navbar jadi Putih */
+.navbar .navbar-nav-link,
+.navbar .navbar-nav-link i,
+.navbar .navbar-brand-name,
+.navbar .d-lg-inline-block {
+    color: #ffffff !important;
+}
+
+/* Kotak Search di Navbar agar tidak hitam */
+.navbar-search .form-control {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    color: white !important;
+    border: none !important;
+}
+.navbar-search .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Sidebar Hijau */
+.sidebar {
+    /* Mengubah variabel warna link khusus di dalam sidebar menjadi putih */
+    --link-color: #ffffff !important;
+    --nav-link-active-color: #ffffff !important;
+    --nav-link-hover-color: #ffffff !important;
+}
+
+.sidebar-main {
+    background-color: #0070C0 !important;
+}
+
+/* =========================================================
+   3. AREA KONTEN PUTIH
+   ========================================================= */
+body,
+.page-content,
+.content-wrapper {
+    background-color: #ffffff !important;
+}
+
+.card {
+    background-color: #ffffff !important;
+    border: 1px solid #eeeeee !important;
+}
+
+
+/* Mengubah teks dan ikon menjadi putih saat menu AKTIF */
+.sidebar .nav-link.active,
+.sidebar .nav-link.active i,
+.sidebar .nav-link.active span {
+    color: #ffffff !important;
+    opacity: 1 !important;
+}
+
+/* Mengatur background menu yang aktif agar tidak biru (opsional) */
+/* Saya sarankan menggunakan hitam transparan tipis agar warna hijaunya tetap terlihat tapi lebih gelap sedikit */
+.sidebar .nav-link.active {
+    background-color: rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Pastikan saat di-hover (kursor di atasnya) juga tetap putih */
+.sidebar .nav-link:hover,
+.sidebar .nav-link:hover i {
+    color: #ffffff !important;
+    background-color: rgba(255, 255, 255, 0.2) !important;
+}

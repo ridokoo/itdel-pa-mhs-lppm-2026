@@ -1,0 +1,103 @@
+/* Container utama */
+.toastui-editor-contents {
+    max-width: 820px;
+    padding: 16px;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell,
+        "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #1f2937; /* abu gelap */
+    background-color: #ffffff;
+}
+
+/* Judul utama */
+.toastui-editor-contents h1 {
+    font-size: 2.1rem;
+    font-weight: 700;
+    margin: 1.5em 0 0.8em;
+    padding-bottom: 0.4em;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+/* Sub judul */
+.toastui-editor-contents h2 {
+    font-size: 1.55rem;
+    font-weight: 600;
+    margin: 2em 0 0.6em;
+}
+
+.toastui-editor-contents h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 1.5em 0 0.5em;
+}
+
+/* Paragraf */
+.toastui-editor-contents p {
+    margin: 0.75em 0 1em;
+    margin-top: 0em;
+}
+
+/* List (markdown -> br fallback) */
+.toastui-editor-contents ul,
+.toastui-editor-contents ol {
+    margin: 0.5em 0 1.2em 1.5em;
+    padding-left: 1em;
+}
+
+.toastui-editor-contents li {
+    margin-bottom: 0.4em;
+}
+
+/* Bold */
+.toastui-editor-contents strong {
+    font-weight: 600;
+    color: #111827;
+}
+
+/* Code block */
+.toastui-editor-contents pre {
+    margin: 1.2em 0;
+    padding: 16px 18px;
+    background-color: #0f172a; /* dark code */
+    color: #e5e7eb;
+    border-radius: 10px;
+    overflow-x: auto;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Inline code */
+.toastui-editor-contents code {
+    font-family: "JetBrains Mono", "Fira Code", monospace;
+}
+
+/* Separator (---) */
+.toastui-editor-contents hr {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 2em 0;
+}
+
+/* Link */
+.toastui-editor-contents a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.toastui-editor-contents a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile friendly */
+@media (max-width: 640px) {
+    .toastui-editor-contents {
+        padding: 18px 16px;
+        font-size: 15px;
+    }
+
+    .toastui-editor-contents h1 {
+        font-size: 1.8rem;
+    }
+}

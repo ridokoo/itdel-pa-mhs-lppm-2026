@@ -1,0 +1,11 @@
+.env
+app.http
+
+/node_modules
+.DS_Store
+.vscode
+/models/backups
+/public/img/users
+
+/tmp
+backups/

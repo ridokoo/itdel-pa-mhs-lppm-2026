@@ -1,0 +1,689 @@
+<div>
+
+    <style>
+        .page-header {
+            background-color: #ffffff !important;
+        }
+
+        .page-title {
+            color: #1a1a1a !important;
+        }
+
+        .card {
+            background-color: #ffffff !important;
+            border: 1px solid #e5e7eb !important;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.04) !important;
+            border-radius: 12px !important;
+        }
+
+        .card-body {
+            background-color: #ffffff !important;
+        }
+
+        .form-control,
+        .form-select {
+            background-color: #ffffff !important;
+            color: #374151 !important;
+            border-color: #e5e7eb !important;
+            border-radius: 8px !important;
+            font-size: 14px !important;
+        }
+
+        .form-control::placeholder {
+            color: #9ca3af !important;
+        }
+
+        .form-control:focus,
+        .form-select:focus {
+            background-color: #ffffff !important;
+            color: #374151 !important;
+            border-color: #0070C0 !important;
+            box-shadow: 0 0 0 0.2rem rgba(32, 201, 151, 0.15) !important;
+        }
+
+        .form-label {
+            color: #374151 !important;
+            font-weight: 600 !important;
+            font-size: 13.5px !important;
+        }
+
+        .btn-primary {
+            background-color: #0070C0 !important;
+            border-color: #0070C0 !important;
+            color: #ffffff !important;
+            border-radius: 8px !important;
+        }
+
+        .btn-primary:hover {
+            background-color: #1bad82 !important;
+        }
+
+        .btn-light {
+            background-color: #f9fafb !important;
+            border-color: #e5e7eb !important;
+            color: #374151 !important;
+            border-radius: 8px !important;
+        }
+
+        .table thead th {
+            background-color: #f8f9fa !important;
+            color: #444 !important;
+            border-bottom: 2px solid #eee !important;
+            font-weight: 700 !important;
+        }
+
+        .table tbody tr {
+            background-color: #ffffff !important;
+            color: #374151 !important;
+        }
+
+        .table tbody tr:hover {
+            background-color: #f0fdf4 !important;
+        }
+
+        /* SWEET ALERT */
+
+        .swal2-popup{
+            width:22rem !important;
+            padding:1.8rem !important;
+            border-radius:20px !important;
+            background:#ffffff !important;
+            color:#333333 !important;
+        }
+
+        .swal2-title{
+            font-size:1.7rem !important;
+            font-weight:700 !important;
+            color:#1f2937 !important;
+            margin-top:12px !important;
+        }
+
+        .swal2-html-container{
+            display:block !important;
+            text-align:center !important;
+            font-size:15px !important;
+            color:#6b7280 !important;
+            line-height:1.6 !important;
+            margin-top:8px !important;
+            margin-bottom:1rem !important;
+        }
+
+        .swal2-confirm{
+            background:#0070C0 !important;
+            border:none !important;
+            border-radius:10px !important;
+            padding:10px 24px !important;
+            font-weight:600 !important;
+            box-shadow:none !important;
+        }
+
+        .swal2-confirm:focus{
+            box-shadow:none !important;
+        }
+
+        .swal2-cancel{
+            border-radius:10px !important;
+            padding:10px 24px !important;
+            font-weight:600 !important;
+        }
+
+        .swal2-icon{
+            width:95px !important;
+            height:95px !important;
+            margin:10px auto 12px auto !important;
+            border-width:4px !important;
+        }
+
+        .swal2-icon .swal2-icon-content{
+            font-size:4rem !important;
+        }
+
+        .swal2-icon.swal2-success{
+            border-color:#0070C0 !important;
+            color:#0070C0 !important;
+        }
+
+        .swal2-success-ring{
+            border:4px solid rgba(32,201,151,.25) !important;
+        }
+
+        .swal2-icon.swal2-success [class^='swal2-success-line']{
+            background-color:#0070C0 !important;
+            height:6px !important;
+            border-radius:10px !important;
+        }
+
+        .swal2-icon.swal2-warning{
+            border-color:#f8bb86 !important;
+            color:#f8bb86 !important;
+        }
+
+        .swal2-icon.swal2-error{
+            border-color:#ef4444 !important;
+            color:#ef4444 !important;
+        }
+
+        .swal2-timer-progress-bar{
+            background:#0070C0 !important;
+        }
+    </style>
+
+    {{-- HEADER --}}
+    <div class="page-header border-bottom mb-4 bg-white">
+
+        <div class="page-header-content d-lg-flex align-items-center">
+
+            <div class="d-flex py-2">
+
+                <h4 class="page-title mb-0 text-dark fw-bold">
+
+                    <i class="ph-bold ph-list-checks me-2"
+                       style="color:#0070C0;"></i>
+
+                    @if($showForm && $isEdit)
+                        Edit Detail Kriteria
+                    @elseif($showForm)
+                        Tambah Detail Kriteria
+                    @else
+                        Kelola Detail Kriteria
+                    @endif
+
+                </h4>
+
+            </div>
+
+            <div class="ms-lg-auto">
+
+                @if(!$showForm)
+
+                    <button wire:click="create"
+                            class="btn btn-primary shadow-sm px-3">
+
+                        <i class="ph-bold ph-plus-circle me-2"></i>
+                        Tambah Detail Kriteria
+
+                    </button>
+
+                @else
+
+                    <button wire:click="resetFields"
+                            class="btn btn-light border px-3">
+
+                        <i class="ph-bold ph-arrow-left me-2"></i>
+                        Kembali
+
+                    </button>
+
+                @endif
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    {{-- CONTENT --}}
+    <div class="content">
+
+        {{-- ================= TABLE ================= --}}
+        @if(!$showForm)
+
+            <div class="card border-0 shadow-sm">
+
+                <div class="table-responsive">
+
+                    <table class="table table-hover bg-white mb-0">
+
+                        <thead>
+                            <tr>
+
+                                <th class="text-center" style="width:60px;">
+                                    No
+                                </th>
+
+                                <th class="text-center">
+                                    Tipe Skema
+                                </th>
+
+                                <th class="text-center">
+                                    Budget
+                                </th>
+
+                                <th class="text-center">
+                                    Anggota
+                                </th>
+
+                                <th class="text-center">
+                                    Jabatan
+                                </th>
+
+                                <th class="text-center" style="width:120px;">
+                                    Aksi
+                                </th>
+
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            @forelse ($criteria as $c)
+
+                                <tr class="align-middle"
+                                    wire:key="criteria-{{ $c->id }}">
+
+                                    <td class="text-center text-muted">
+                                        {{ $loop->iteration }}
+                                    </td>
+
+                                    <td class="fw-bold text-dark">
+                                        {{ $c->schemeType->name ?? '-' }}
+                                    </td>
+
+                                    <td class="text-muted">
+                                        Rp {{ number_format($c->min_budget,0,',','.') }}
+                                        -
+                                        Rp {{ number_format($c->max_budget,0,',','.') }}
+                                    </td>
+
+                                    <td class="text-center">
+
+                                        <span
+                                            style="
+                                                background: linear-gradient(135deg, #eaf4ff, #dceeff);
+                                                color: #0b5ea8;
+                                                border: 1px solid #b8d9f5;
+                                                border-radius: 10px;
+                                                padding: 7px 14px;
+                                                font-size: 12px;
+                                                font-weight: 700;
+                                                display: inline-flex;
+                                                align-items: center;
+                                                gap: 6px;
+                                                box-shadow: 0 2px 6px rgba(0, 112, 192, 0.08);
+                                            ">
+
+                                            <i class="ph-bold ph-users"></i>
+
+                                            {{ $c->min_members }}
+                                            -
+                                            {{ $c->max_members }}
+                                            Orang
+
+                                        </span>
+
+                                    </td>
+
+                                    <td class="text-muted">
+                                        {{ $c->functionalPosition->name ?? '-' }}
+                                    </td>
+
+                                    <td class="text-center">
+
+                                        <div class="d-inline-flex gap-1">
+
+                                            <button wire:click="edit('{{ $c->id }}')"
+                                                    class="btn btn-outline-primary btn-icon btn-sm rounded-pill border-transparent"
+                                                    title="Edit">
+
+                                                <i class="ph-bold ph-pencil-line"></i>
+
+                                            </button>
+
+                                            <button onclick="confirmDelete('{{ $c->id }}')"
+                                                    class="btn btn-outline-danger btn-icon btn-sm rounded-pill border-transparent"
+                                                    title="Hapus">
+
+                                                <i class="ph-bold ph-trash"></i>
+
+                                            </button>
+
+                                        </div>
+
+                                    </td>
+
+                                </tr>
+
+                            @empty
+
+                                <tr>
+
+                                    <td colspan="6"
+                                        class="text-center py-5 text-muted">
+
+                                        <i class="ph-bold ph-list-checks fs-2 d-block mb-2 opacity-25"></i>
+
+                                        Belum ada data kriteria skema.
+
+                                    </td>
+
+                                </tr>
+
+                            @endforelse
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        {{-- ================= FORM ================= --}}
+        @else
+
+            <div class="card border-0 shadow-sm">
+
+                <div class="card-body p-4">
+
+                    <form wire:submit.prevent="{{ $isEdit ? 'update' : 'store' }}">
+
+                        <div class="row g-4">
+
+                            {{-- TIPE SKEMA --}}
+                            <div class="col-md-6">
+
+                                <label class="form-label">
+                                    Tipe Skema
+                                </label>
+
+                                <select wire:model="scheme_type_id"
+                                        class="form-select @error('scheme_type_id') is-invalid @enderror">
+
+                                    <option value="">
+                                        -- Pilih --
+                                    </option>
+
+                                    @foreach ($schemeTypes as $t)
+                                        <option value="{{ $t->id }}">
+                                            {{ $t->name }}
+                                        </option>
+                                    @endforeach
+
+                                </select>
+
+                                @error('scheme_type_id')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
+
+                            </div>
+
+
+                            {{-- JABATAN --}}
+                            <div class="col-md-6">
+
+                                <label class="form-label">
+                                    Minimal Jabatan
+                                </label>
+
+                                <select wire:model="min_functional_position_id"
+                                        class="form-select @error('min_functional_position_id') is-invalid @enderror">
+
+                                    <option value="">
+                                        -- Pilih --
+                                    </option>
+
+                                    @foreach ($functionalPositions as $f)
+                                        <option value="{{ $f->id }}">
+                                            {{ $f->name }}
+                                        </option>
+                                    @endforeach
+
+                                </select>
+
+                                @error('min_functional_position_id')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
+
+                            </div>
+
+
+                            {{-- MIN BUDGET --}}
+                            <div class="col-md-6">
+
+                                <label class="form-label">
+                                    Min Budget
+                                </label>
+
+                                <input type="text"
+                                       wire:model="min_budget"
+                                       class="form-control @error('min_budget') is-invalid @enderror"
+                                       placeholder="Contoh: 1000000">
+
+                                @error('min_budget')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
+
+                            </div>
+
+
+                            {{-- MAX BUDGET --}}
+                            <div class="col-md-6">
+
+                                <label class="form-label">
+                                    Max Budget
+                                </label>
+
+                                <input type="text"
+                                       wire:model="max_budget"
+                                       class="form-control @error('max_budget') is-invalid @enderror"
+                                       placeholder="Contoh: 5000000">
+
+                                @error('max_budget')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
+
+                            </div>
+
+
+                            {{-- MIN MEMBER --}}
+                            <div class="col-md-6">
+
+                                <label class="form-label">
+                                    Min Anggota
+                                </label>
+
+                                <input type="number"
+                                       wire:model="min_members"
+                                       class="form-control @error('min_members') is-invalid @enderror">
+
+                                @error('min_members')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
+
+                            </div>
+
+
+                            {{-- MAX MEMBER --}}
+                            <div class="col-md-6">
+
+                                <label class="form-label">
+                                    Max Anggota
+                                </label>
+
+                                <input type="number"
+                                       wire:model="max_members"
+                                       class="form-control @error('max_members') is-invalid @enderror">
+
+                                @error('max_members')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
+
+                            </div>
+
+
+                            {{-- S2 --}}
+                            <div class="col-md-3">
+
+                                <div class="form-check form-switch mt-2">
+
+                                    <input type="checkbox"
+                                           wire:model="allow_s2"
+                                           class="form-check-input">
+
+                                    <label class="form-check-label ms-2">
+                                        Izinkan S2
+                                    </label>
+
+                                </div>
+
+                            </div>
+
+
+                            {{-- S3 --}}
+                            <div class="col-md-3">
+
+                                <div class="form-check form-switch mt-2">
+
+                                    <input type="checkbox"
+                                           wire:model="allow_s3"
+                                           class="form-check-input">
+
+                                    <label class="form-check-label ms-2">
+                                        Izinkan S3
+                                    </label>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        {{-- BUTTON --}}
+                        <div class="border-top pt-3 mt-4 d-flex justify-content-end gap-2">
+
+                            <button type="button"
+                                    wire:click="resetFields"
+                                    class="btn btn-link text-muted fw-bold text-decoration-none">
+
+                                Cancel
+
+                            </button>
+
+                            <button type="submit"
+                                    class="btn btn-primary px-4 shadow-sm"
+                                    wire:loading.attr="disabled"
+                                    wire:target="store, update">
+
+                                <span wire:loading.remove
+                                      wire:target="store, update">
+
+                                    <i class="ph-bold ph-floppy-disk me-2"></i>
+
+                                    {{ $isEdit ? 'Update' : 'Simpan Data' }}
+
+                                </span>
+
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        @endif
+
+    </div>
+
+
+@script
+<script>
+
+    // ================= DELETE =================
+    window.confirmDelete = (id) => {
+
+        Swal.fire({
+
+            title: 'Hapus data?',
+
+            html: `<div>Data yang dihapus tidak dapat dikembalikan.</div>`,
+
+            icon: 'warning',
+
+            showCancelButton: true,
+
+            confirmButtonColor: '#ef4444',
+            cancelButtonColor: '#6b7280',
+
+            confirmButtonText: 'Ya, Hapus',
+            cancelButtonText: 'Batal',
+
+            reverseButtons: true
+
+        }).then((result) => {
+
+            if (result.isConfirmed) {
+
+                $wire.deleteConfirm(id);
+
+            }
+
+        });
+
+    };
+
+
+    // ================= NOTIFICATION =================
+    Livewire.on('showSuccessAlert', (message) => {
+
+        Swal.fire({
+
+            title: 'Berhasil!',
+
+            html: `<div>${message}</div>`,
+
+            icon: 'success',
+
+            confirmButtonText: 'OK',
+
+            confirmButtonColor: '#0070C0',
+
+            timer: 2500,
+            timerProgressBar: true
+
+        });
+
+    });
+
+
+    Livewire.on('showErrorAlert', (message) => {
+
+        Swal.fire({
+
+            title: 'Gagal!',
+
+            html: `<div>${message}</div>`,
+
+            icon: 'error',
+
+            confirmButtonText: 'OK',
+
+            confirmButtonColor: '#ef4444'
+
+        });
+
+    });
+
+</script>
+@endscript
+
+</div>
+
+
+

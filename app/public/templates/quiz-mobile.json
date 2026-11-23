@@ -1,0 +1,134 @@
+{
+    "data": [
+        {
+            "judul": "K1-01",
+            "score": 10,
+            "waktu": 30,
+            "soal": "Kotlin dikembangkan oleh perusahaan?",
+            "options": [
+                "Google",
+                "JetBrains",
+                "JetBrains",
+                "Oracle"
+            ],
+            "answers": [2,3]
+        },
+        {
+            "judul": "K1-02",
+            "score": 10,
+            "waktu": 30,
+            "soal": "File source code Kotlin memiliki ekstensi?",
+            "options": [
+                ".java",
+                ".kot",
+                ".kt",
+                ".kotlin"
+            ],
+            "answers": [3]
+        },
+        {
+            "judul": "K1-03",
+            "score": 10,
+            "waktu": 30,
+            "soal": "Keyword untuk mendeklarasikan variabel yang nilainya tidak bisa diubah adalah?",
+            "options": [
+                "var",
+                "let",
+                "const",
+                "val"
+            ],
+            "answers": [4]
+        },
+        {
+            "judul": "K1-04",
+            "score": 10,
+            "waktu": 30,
+            "soal": "Keyword untuk mendeklarasikan variabel yang nilainya bisa diubah adalah?",
+            "options": [
+                "val",
+                "var",
+                "let",
+                "mutable"
+            ],
+            "answers": [2]
+        },
+        {
+            "judul": "K1-05",
+            "score": 10,
+            "waktu": 30,
+            "soal": "Tipe data untuk menyimpan bilangan bulat di Kotlin adalah?",
+            "options": [
+                "Float",
+                "Double",
+                "Int",
+                "Char"
+            ],
+            "answers": [3]
+        },
+        {
+            "judul": "K1-06",
+            "score": 10,
+            "waktu": 30,
+            "soal": "Fungsi utama (entry point) pada program Kotlin adalah?",
+            "options": [
+                "start()",
+                "run()",
+                "main()",
+                "init()"
+            ],
+            "answers": [3]
+        },
+        {
+            "judul": "K1-07",
+            "score": 10,
+            "waktu": 30,
+            "soal": "Simbol untuk komentar satu baris di Kotlin adalah?",
+            "options": [
+                "/* */",
+                "#",
+                "//",
+                "<!-- -->"
+            ],
+            "answers": [3]
+        },
+        {
+            "judul": "K1-08",
+            "score": 10,
+            "waktu": 30,
+            "soal": "Operator yang digunakan untuk membandingkan kesamaan nilai dan tipe data di Kotlin adalah?",
+            "options": [
+                "==",
+                "=",
+                "===",
+                "!="
+            ],
+            "answers": [3]
+        },
+        {
+            "judul": "K1-09",
+            "score": 10,
+            "waktu": 30,
+            "soal": "Struktur kontrol yang digunakan untuk percabangan di Kotlin adalah?",
+            "options": [
+                "switch",
+                "when",
+                "select",
+                "case"
+            ],
+            "answers": [2]
+        },
+        {
+            "judul": "K1-10",
+            "score": 10,
+            "waktu": 30,
+            "soal": "Untuk menampilkan output ke layar di Kotlin digunakan fungsi?",
+            "options": [
+                "echo()",
+                "print()",
+                "console.log()",
+                "printf()"
+            ],
+            "answers": [2]
+        }
+    ]
+}

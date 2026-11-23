@@ -1,0 +1,957 @@
+/*-------------------------------------
+  General CSS for RTL Version
+-----------------------------------*/
+input,
+select {
+  text-align: right;
+}
+
+select {
+  background-position: 8% 50%;
+}
+
+.link i {
+  margin-left: 0;
+  margin-right: 5px;
+}
+
+.header-wrap.style1 .header-right .btn {
+  margin-left: 0;
+}
+
+.btn i {
+  margin: 0 7px 0 0px;
+  top: 1px;
+}
+
+.btn.style1 i {
+  margin-left: 0;
+  margin-right: 7px;
+}
+
+.btn.style3 i {
+  margin: 0 6px 0 7px;
+  top: -1px;
+}
+
+.link {
+  position: relative;
+}
+.link i {
+  top: 2px;
+  left: -20px;
+  right: auto;
+}
+
+.link.style1::after {
+  left: auto;
+  right: 0;
+  width: calc(100% + 23px);
+}
+
+.link.style2 i {
+  left: -18px;
+  right: auto;
+}
+
+.checkbox label {
+  padding-left: 0;
+  padding-right: 25px;
+}
+
+.checkbox label::before {
+  right: 0;
+  left: auto;
+  top: 7px;
+}
+
+.checkbox.style2 input:checked + label::after {
+  top: 10px;
+}
+
+.checkbox.style2 input:checked + label::after {
+  right: 8px;
+  left: auto;
+}
+
+.checkbox input:checked + label::after {
+  left: auto;
+  right: 9px;
+}
+
+.form_group input {
+  left: auto;
+  right: 0;
+}
+
+.form_group label {
+  padding-left: 0;
+  padding-right: 28px;
+}
+
+.new-product-item .new-product-info {
+  margin-left: 0;
+  margin-right: 15px;
+}
+
+.social-profile li:last-child,
+.social-profile.style2 li:last-child {
+  margin-right: 10px !important;
+}
+
+.social-profile li:first-child {
+  margin-right: 0;
+}
+
+.back-to-top {
+  right: auto;
+  left: 20px;
+}
+
+.section-title.style1 h2::after,
+.content-title.style1 h2::after {
+  right: auto;
+  left: -15px;
+}
+
+.sidebar .sidebar-widget h4::after {
+  left: auto;
+  right: 0;
+}
+
+.select-method input {
+  display: none;
+}
+
+.select-method [type=radio]:checked + label::before,
+.select-method [type=radio]:not(:checked) + label::before {
+  left: auto;
+  right: 0;
+}
+
+.select-method [type=radio]:checked + label,
+.select-method [type=radio]:not(:checked) + label {
+  padding-left: 0;
+  padding-right: 25px;
+}
+
+.select-method [type=radio]:checked + label::after,
+.select-method [type=radio]:not(:checked) + label::after {
+  left: auto;
+  right: 3px;
+}
+
+.comp-map .contact-form .form-wrap .form-group select,
+.quote-bg .contact-form .form-wrap .form-group select {
+  background-position: 5% 50%;
+}
+
+.search-box button {
+  right: auto;
+  left: 5px;
+}
+
+.search-box input {
+  padding: 10px 20px 10px 60px;
+}
+
+.filter-btn-wrap button:nth-child(1) {
+  margin-right: 0;
+  margin-left: 20px;
+}
+
+.filter-view i,
+.filter-item-num select i {
+  margin-right: 0;
+  margin-left: 5px;
+}
+
+.filter-item-num select {
+  background-position: 8% 50%;
+}
+
+/*------------------------
+        Header CSS
+-------------------------*/
+.header-wrap.style1 .btn {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+.header-wrap.style3 .header-bottom .logo::before {
+  left: auto;
+  right: 0;
+}
+
+.header-wrap.style3 .header-bottom .logo a {
+  padding-right: 20px;
+}
+
+.header-wrap.style1 .header-right .btn i {
+  margin-left: 0;
+  margin-right: 7px;
+  top: 0px;
+}
+
+.header-top-right .header-contact-item {
+  margin-right: 0;
+  margin-left: 30px;
+}
+
+.header-wrap.style3 .header-bottom .header-bottom-right .btn {
+  margin-left: 0;
+  margin-right: 25px;
+}
+
+.main-menu-wrap #menu > ul > li.has-children > a::before {
+  right: auto;
+  left: 0px;
+  top: 32px;
+}
+
+.main-menu-wrap.style2 #menu > ul > li.has-children > a::before {
+  left: 0px;
+  top: 19px;
+}
+
+.main-menu-wrap.style3 #menu > ul > li.has-children > a::before {
+  left: -13px;
+  top: 15px;
+}
+
+.main-menu-wrap #menu ul li.has-children .sub-menu {
+  left: 0;
+  right: -6px;
+}
+
+.main-menu-wrap #menu ul > .has-children > .sub-menu > .has-children > .sub-menu {
+  left: auto;
+  right: 100%;
+}
+
+.main-menu-wrap #menu > ul > li.has-children > .sub-menu > .has-children > a::after {
+  right: auto;
+  left: 15px;
+}
+
+.main-menu-wrap #menu > ul > li.has-children > .sub-menu > .has-children > a::after {
+  transform: rotate(45deg);
+}
+
+.header-wrap .header-search button {
+  right: auto;
+  left: 0;
+}
+
+.header-wrap .header-top .header-top-menu ul li:first-child {
+  margin-right: 0;
+  margin-left: 15px;
+}
+
+.header-wrap .header-top .header-top-btn .btn:last-child {
+  margin-left: 0;
+}
+
+.main-menu-wrap #menu ul li.has-children .sub-menu li {
+  text-align: right;
+}
+
+.header-bottom-right select {
+  padding: 0 7px 0 15px;
+}
+
+.header-bottom-right .lang_selctor select {
+  background-position: calc(100% - 76px) 11px, calc(100% - 68px) 11px, 100% 0;
+}
+
+.header-bottom-right .lang_selctor i {
+  left: auto;
+  right: 8px;
+}
+
+.header-contact-item .contact-item:nth-child(1) {
+  margin-right: 0;
+  margin-left: 20px;
+}
+
+.header-wrap.style2 .header-bottom .header-bottom-right .btn {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+.navbar-language .dropdown-toggle {
+  padding-right: 0;
+  padding-left: 25px;
+}
+
+.navbar-language .dropdown-toggle::before {
+  right: auto;
+  left: 0;
+}
+
+.navbar-language .dropdown-toggle i {
+  margin-right: 0;
+  margin-left: 4px;
+  position: relative;
+  top: 1px;
+}
+
+.navbar-language .dropdown-menu.show {
+  inset: 0px auto auto auto !important;
+}
+
+.breadcrumb-wrap .breadcrumb-title .breadcrumb-menu li a::after {
+  right: auto;
+  left: -5px;
+}
+
+.breadcrumb-wrap .breadcrumb-title .breadcrumb-menu li {
+  margin: 0 10px;
+}
+
+.breadcrumb-wrap .breadcrumb-title .breadcrumb-menu li:last-child {
+  margin-left: 0;
+}
+
+.breadcrumb-wrap .breadcrumb-title .breadcrumb-menu li:first-child {
+  margin-left: 10px;
+}
+
+.breadcrumb-wrap .breadcrumb-title .breadcrumb-menu li:last-child a {
+  padding-left: 0;
+}
+
+.breadcrumb-wrap .breadcrumb-title .breadcrumb-menu li:first-child a {
+  padding-left: 10px;
+}
+
+.breadcrumb-wrap .breadcrumb-title .blog-metainfo li:first-child {
+  margin-right: 0;
+  margin-left: 15px;
+}
+
+.breadcrumb-wrapper .breadcrumb-menu li a::after {
+  right: auto;
+  left: -11px;
+  transform: skewX(15deg);
+}
+
+.breadcrumb-wrapper .breadcrumb-menu li:last-child {
+  margin-right: 10px;
+  margin-left: 0;
+}
+
+.breadcrumb-wrapper .breadcrumb-menu li:first-child {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+/*-------------------------------------
+        Hero CSS
+-----------------------------------*/
+.hero-wrap .hero-content .hero-btn .btn:nth-child(1) {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.hero-wrap.style3 .hero-img-wrap .hero-img-one {
+  left: auto;
+  right: 60%;
+}
+
+.hero-wrap.style3 .hero-img-wrap .hero-img-two {
+  left: auto;
+  right: 40%;
+}
+
+.hero-wrap.style3 .hero-img-wrap .sl-box.one {
+  right: auto;
+  left: 20%;
+}
+
+.hero-wrap.style3 .hero-img-wrap .sl-box.two {
+  right: auto;
+  left: 2%;
+}
+
+.hero-wrap.style3 .hero-img-wrap .sl-box.three {
+  left: auto;
+  right: 38%;
+}
+
+.hero-wrap.style2 .hero-content p {
+  padding-right: 0;
+  padding-left: 80px;
+}
+
+.hero-wrap.style3 .hero-content .hero-btn .btn i {
+  margin: 0 0 0 5px;
+}
+
+.hero-wrap.style3 .hero-img-wrap .slider-thumb-wrap {
+  left: auto;
+  right: 0;
+}
+
+.hero-btn .btn i {
+  margin: 0 0 0 8px;
+}
+
+.gd-cat.one {
+  left: 45%;
+}
+.gd-cat.two {
+  right: 80%;
+}
+.gd-cat.three {
+  left: 45%;
+}
+.gd-cat.four {
+  left: 10%;
+}
+
+.hero-wrap.style2 .hero-content span::before {
+  left: auto;
+  right: 0;
+}
+
+.hero-wrap.style2 .hero-content span::after {
+  left: auto;
+  right: 3px;
+}
+
+.hero-wrap.style2 .hero-content span {
+  padding-left: 0;
+  padding-right: 17px;
+}
+
+/*----------------------------------
+        About & Promo Section CSS
+-----------------------------------*/
+.about-wrap .about-content .btn.style1 i {
+  margin-left: 9px;
+  margin-right: 0;
+  position: relative;
+  top: 0;
+}
+
+.about-wrap.style2 .about-content .about-feature-list li i {
+  left: auto;
+  right: 0;
+}
+
+.about-wrap.style2 .about-content .about-feature-list li {
+  padding-left: 0;
+  padding-right: 25px;
+}
+
+.promo-item .promo-text {
+  margin-left: 0;
+  margin-right: 15px;
+}
+
+.about-wrap.style3 .about-img-slider .ab-btn-wrap {
+  left: auto;
+  right: calc(50% + 20px);
+}
+
+.about-wrap.style3 .about-img-slider .about-bg-one {
+  margin-left: 0;
+  margin-right: 60px;
+}
+
+.ab-service-cat {
+  left: auto;
+  right: 0;
+  border-left: none;
+  border-right: 5px solid #24A77E;
+}
+
+.about-wrap.style3 .about-content {
+  padding: 70px 80px 0 0;
+  transform: translate(140px, 60px);
+}
+
+.about-wrap.style3 .about-content .about-promo-wrap .about-promo-item .about-promo-text {
+  margin-left: 0;
+  margin-right: 15px;
+}
+
+.why-choose-wrap.style4 .whi-img-one .exp_text img {
+  margin-right: 0;
+  margin-left: 4px;
+}
+
+/*--------------------------------------
+        Service Section CSS
+---------------------------------------*/
+.service-card.style1 .service-header .service-header-title,
+.service-card.style3 .service-header .service-header-title {
+  margin-left: 0;
+  margin-right: 15px;
+}
+
+.service-card.style1 .service-header .service-header-title h3::after,
+.service-card.style3 .service-header .service-header-title h3::after {
+  left: auto;
+  right: calc(100% + 10px);
+}
+
+.gallery-item .gallery-info .gal_btn i {
+  top: 0px;
+  left: 0px;
+}
+
+.category-box ul li a::before {
+  left: auto;
+  right: 0;
+}
+
+.category-box ul li a {
+  padding: 6px 30px 6px 5px;
+}
+
+.category-box ul li a:hover {
+  padding-left: 0;
+  padding-right: 38px;
+}
+
+.service-subinfo .features-list li {
+  padding-left: 0;
+  padding-right: 28px;
+}
+
+.service-subinfo .features-list li i {
+  left: auto;
+  right: 0;
+}
+
+.accordion-item .accordion-header .accordion-button {
+  padding: 15px 55px 15px 25px;
+}
+
+.accordion-button::before {
+  left: auto;
+  right: 27px;
+}
+
+.accordion-button::after {
+  left: auto;
+  right: 34px;
+}
+
+/*--------------------------------------
+Project, Feature & Counter Section CSS
+---------------------------------------*/
+.fun-facts-card i {
+  left: auto;
+  right: 15px;
+}
+
+.wh-item .wh-text {
+  margin-left: 0;
+  margin-right: 15px;
+}
+
+.wh-video-wrap .wh-shape-1 {
+  right: auto;
+  left: -40px;
+}
+
+.why-choose-wrap.style1 .btn i {
+  margin-left: 0;
+  margin-right: 6px;
+}
+
+.why-choose-wrap.style3 .wh-item-wrap .wh-item .wh-text {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+.why-choose-wrap.style3 .wh-item-wrap::before {
+  left: auto;
+  right: 0;
+}
+
+.why-choose-wrap.style3 .wh-item-wrap::after {
+  right: auto;
+  left: 0;
+}
+
+.why-choose-wrap.style3 .wh-item-wrap .wh-item:nth-child(1)::after,
+.why-choose-wrap.style3 .wh-item-wrap .wh-item:nth-child(4)::after {
+  right: auto;
+  left: 0;
+}
+
+.why-choose-wrap.style3 .wh-item-wrap .wh-item:nth-child(2)::before,
+.why-choose-wrap.style3 .wh-item-wrap .wh-item:nth-child(4)::before {
+  left: auto;
+  right: 0;
+}
+
+/*----------------------------------
+        Shop CSS
+-----------------------------------*/
+.product-quantity .qtySelector input {
+  right: 48px;
+}
+
+.product-more-option-item h6 {
+  margin: 0 0 0 12px;
+}
+
+.product-tablist .nav-item {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.single-product-option button:nth-child(1),
+.single-product-option button:nth-child(2) {
+  margin-right: 0;
+  margin-left: 15px;
+}
+
+.post-comment-wrap .comment-item .comment-author_text {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+.comment-author_info span {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+.wishlist-table table tbody tr td .wh_item span {
+  margin-left: 0;
+  margin-right: 15px;
+}
+
+.wh_qty .product-quantity .qtySelector input {
+  right: -48px;
+}
+
+.checkout-details .form-group button {
+  right: auto;
+  left: 0;
+}
+
+.checkout-details .form-group input {
+  padding: 10px 15px 10px 40px;
+}
+
+/*----------------------------------
+       Blog CSS
+-----------------------------------*/
+.blog-card .blog-img .blog-date {
+  left: auto;
+  right: 0;
+  border-radius: 0px 0px 0px 20px;
+}
+
+.blog-card .blog-info .blog-metainfo li:first-child {
+  margin-right: 0;
+  margin-left: 15px;
+}
+
+.pp-post-item .pp-post-info {
+  margin-left: 0;
+  margin-right: 15px;
+}
+
+.pp-post-item .pp-post-info span i {
+  left: auto;
+  right: 0;
+}
+
+.pp-post-item .pp-post-info span {
+  padding-left: 0;
+  padding-right: 20px;
+}
+
+.content-feature-list li {
+  padding-left: 0;
+  padding-right: 18px;
+}
+
+.content-feature-list li::before {
+  left: auto;
+  right: 0;
+}
+
+.post-tag span,
+.post-share span {
+  margin-right: 0;
+  margin-left: 5px;
+}
+
+.post-author .post-author-info,
+.comment-item .comment-author-wrap {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+.comment-item .comment-author-wrap .comment-author-name .comment-date {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+.pp-product-wrap .pp-product-info {
+  margin-left: 0;
+  margin-right: 15px;
+}
+
+/*----------------------------------
+       Testimonial CSS
+-----------------------------------*/
+.quote-icon-one {
+  left: auto;
+  right: calc(50% + 0px);
+  transform: translateX(-50%);
+}
+
+.quote-icon-two {
+  right: auto;
+  left: 0;
+}
+
+.testimonial-one-pagination.slider-pagination {
+  left: auto;
+  right: calc(50% + 22px);
+}
+
+.client-info-wrap .client-info {
+  margin-left: 0;
+  margin-right: 15px;
+}
+
+.wh-img-slider .wh-btn-wrp .slider-btn:last-child {
+  margin-right: 10px;
+  margin-left: 0;
+}
+
+.swiper-pagination.swiper-pagination-progressbar {
+  right: 0;
+}
+
+/*----------------------------------
+       Newsletter CSS
+-----------------------------------*/
+.newsletter-form .form-group button {
+  right: auto;
+  left: 6px;
+}
+
+.newsletter-form .form-group input {
+  padding: 5px 15px 5px 65px;
+}
+
+/*----------------------------------
+        Footer CSS
+-----------------------------------*/
+.footer-wrap .footer-top .footer-widget .footer-menu li a::after,
+.contact-item .contact-icon {
+  left: auto;
+  right: 0;
+}
+
+.contact-item {
+  padding-left: 0;
+  padding-right: 40px;
+}
+
+/*----------------------------------
+        Shop CSS
+-----------------------------------*/
+/*----------------------------------
+        Responsive CSS
+-----------------------------------*/
+@media only screen and (min-width: 1600px) {
+  .hero-wrap.style1 .hero-content.style1 {
+    padding-right: 0;
+    padding-left: 60px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .header-top-right .select_currency {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .header-wrap .header-top-right .shopcart {
+    margin-right: 0;
+  }
+  .header-wrap .main-menu-wrap.style1 #menu > ul > li.has-children > a::before,
+  .header-wrap .main-menu-wrap.style2 #menu > ul > li.has-children > a::before {
+    right: auto !important;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .comp-desc {
+    padding-right: 0;
+    padding-left: 100px;
+  }
+  .main-menu-wrap.style2 #menu > ul > li > a::after {
+    left: 0;
+  }
+  .main-menu-wrap.style3 #menu > ul > li:last-child {
+    margin-right: 35px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .spl-item .spl-text,
+  .spl-item.style1 .spl-text {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .hero-wrap.style3 .hero-img-wrap .sl-box.two,
+  .hero-wrap.style3 .hero-img-wrap .sl-box.one,
+  .hero-wrap.style3 .hero-img-wrap .sl-box.three {
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    width: auto;
+    height: auto;
+  }
+  .comment-item .comment-author-wrap .comment-author-name .comment-date {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .gd-cat.one {
+    left: 20px;
+  }
+  .gd-cat.two {
+    right: 30px;
+    left: auto;
+  }
+  .gd-cat.three {
+    left: 40px;
+    bottom: 55%;
+  }
+  .gd-cat.four {
+    right: 50px;
+    bottom: 55%;
+    left: auto;
+  }
+  .product-quantity .qtySelector input {
+    right: 40px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .promo-wrap.style3 .promo-item .promo-text {
+    margin-right: 0;
+  }
+  .about-wrap.style3 .about-img-slider .ab-btn-wrap .slider-btn {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .post-author .post-author-info {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .comment-item .comment-author-wrap {
+    margin-left: 0;
+    margin-right: 15px;
+  }
+  .service-card.style1 .service-header .service-header-title,
+  .service-card.style3 .service-header .service-header-title {
+    margin-right: 10px;
+  }
+  .post-comment-wrap .comment-item .comment-author_text {
+    margin-left: 0;
+    margin-right: 15px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .testimonial-item .client-quote .quote-icon-one {
+    left: auto;
+    right: 0;
+    transform: translateX(0);
+  }
+  .testimonial-one-pagination.slider-pagination {
+    left: auto;
+    right: auto;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .gd-cat.one {
+    left: 20px;
+  }
+  .gd-cat.two {
+    right: 30px;
+  }
+  .gd-cat.three {
+    left: 40px;
+    bottom: 45%;
+  }
+  .gd-cat.four {
+    right: 50px;
+    bottom: 45%;
+    left: auto;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .hero-wrap.style2 .hero-img img {
+    max-width: 70%;
+  }
+  .gd-cat {
+    width: 140px;
+    padding: 10px 5px;
+  }
+  .gd-cat img.gd-cat-img {
+    max-width: 40px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .mobile-top-bar {
+    margin-right: 0;
+    margin-left: 15px;
+  }
+  .mobile-top-bar span:nth-child(2) {
+    width: 15px;
+    margin-left: 10px;
+    position: relative;
+    left: -10px;
+  }
+  .main-menu li span.menu-expand {
+    right: auto;
+    left: 0;
+  }
+  .main-menu li ul.sub-menu {
+    padding-left: 0;
+    padding-right: 20px;
+  }
+  .menu-close {
+    right: auto;
+    left: 16px;
+  }
+  .header-wrap .main-menu li span.menu-expand {
+    right: auto;
+    left: 0;
+  }
+  .menu-close {
+    right: auto;
+    left: 16px;
+  }
+  .header-wrap.style1 .btn,
+  .header-wrap.style2 .btn,
+  .header-wrap.style3 .btn {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .close-header-top button {
+    right: auto;
+    left: 10px;
+  }
+  .wh-img-slider {
+    margin-top: 30px;
+  }
+  .about-wrap.style2 .about-content,
+  .about-wrap.style3 .about-content {
+    margin-top: 35px;
+    padding: 0;
+    transform: translate(0, 0);
+  }
+}/*# sourceMappingURL=rtl.css.map */

@@ -1,0 +1,5 @@
+
+*.sql
+.env
+app/storage/phpstan/
+app/storage/logs/

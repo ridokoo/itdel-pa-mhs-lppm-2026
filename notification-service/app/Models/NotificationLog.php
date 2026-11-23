@@ -1,0 +1,21 @@
+<?php
+ 
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class NotificationLog extends Model
+{
+    protected $table = 'notification_logs';
+
+    protected $fillable = [
+        'user_id',
+        'title',
+        'message',
+        'channel',
+        'status',
+        'event_type',
+        'proposal_id',
+    ];
+}
+
